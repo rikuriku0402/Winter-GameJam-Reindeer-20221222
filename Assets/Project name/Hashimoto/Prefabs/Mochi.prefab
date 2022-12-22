@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -896169940709725792}
   - component: {fileID: -9134173164117612333}
   m_Layer: 0
-  m_Name: Obstacle
+  m_Name: Mochi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a3c140b364cdfc448598c2e86c8220e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _score: 500
