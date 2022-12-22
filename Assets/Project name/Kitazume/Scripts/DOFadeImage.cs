@@ -11,10 +11,6 @@ public class DOFadeImage : MonoBehaviour
     private Image _openCurtain;
 
     [SerializeField]
-    [Header("福笑いのタイムマネージャー")]
-    private TimeManager _timeManager;
-    
-    [SerializeField]
     private float _openCurtainSpeed = 0.1f;
 
     [SerializeField]
@@ -40,7 +36,7 @@ public class DOFadeImage : MonoBehaviour
 
     void Update()
     {
-        if (_timeManager.IsTimeOver)
+        if (TimeManager.Instance.IsTimeOver)
         {
             OpenCurtain();
         }
