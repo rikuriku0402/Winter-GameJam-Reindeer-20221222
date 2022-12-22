@@ -2104,7 +2104,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577791400, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
       propertyPath: _countDown
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 2687797393954498707, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
       propertyPath: m_IsActive
@@ -2407,8 +2407,7 @@ MonoBehaviour:
   - {fileID: 725448315}
   - {fileID: 541300322}
   - {fileID: 1706394146}
-  _num: 6
-  _maxNum: 7
+  _maxNum: 6
   _facePartsImage: {fileID: 11400000, guid: fb673d536f2d2b14f82cbca2763a8c2f, type: 2}
 --- !u!4 &1980049336
 Transform:
