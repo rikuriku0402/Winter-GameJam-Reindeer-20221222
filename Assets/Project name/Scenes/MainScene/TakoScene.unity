@@ -164,8 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699aa64c93d86cb4cacc6b74ee7fbbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
-  _maxSize: 10
 --- !u!212 &313347719
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -869,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1373448940
 RectTransform:
   m_ObjectHideFlags: 0
@@ -999,7 +997,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1487395556
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1116,9 +1114,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 500831070, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
+      propertyPath: _retrySceneName
+      value: TakoScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 500831070, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
       propertyPath: _gameClearCanvas
       value: 
       objectReference: {fileID: 840849413}
+    - target: {fileID: 577791398, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2687797394105529384, guid: 310ccd674fa579445a4ec05dd39df4f2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1211,8 +1217,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 699aa64c93d86cb4cacc6b74ee7fbbb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 10
-  _maxSize: 10
 --- !u!212 &1945399214
 SpriteRenderer:
   m_ObjectHideFlags: 0
