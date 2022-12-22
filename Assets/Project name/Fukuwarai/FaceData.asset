@@ -63,16 +63,28 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 4063373e7a450654599507f283f00361, type: 3}
   - _name: "\u3042\u3079\u3061\u3083\u3093"
     _faceSprite:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 080537f09fd6c62489cc5dbcabacb741, type: 3}
+    - {fileID: 21300000, guid: 74e8df2677599a34cb959b97eedd0ea8, type: 3}
+    - {fileID: 21300000, guid: a71fc05c0bdade6488ed656769d8a418, type: 3}
+    - {fileID: 21300000, guid: 2da8c5ede2ac0b245874ca39253117c4, type: 3}
+    - {fileID: 21300000, guid: 05b3e1513c7cd35429813e7a48059dfe, type: 3}
+    - {fileID: 21300000, guid: af6b02244016fef4681f4c2f17630749, type: 3}
+    - {fileID: 21300000, guid: 0a3da75a1455e9d48a486e85b7bc614b, type: 3}
+    - {fileID: 21300000, guid: 005f4537a7f787c44a7b44922ba4a612, type: 3}
     - {fileID: 21300000, guid: cad6037f900f6664fa4827b2aebada13, type: 3}
     - {fileID: 21300000, guid: cad6037f900f6664fa4827b2aebada13, type: 3}
+  - _name: "\u304B\u306A"
+    _faceSprite:
+    - {fileID: 21300000, guid: 47c801b7b59240d428b61bb09c8255be, type: 3}
+    - {fileID: 21300000, guid: c63375913002f2f4eb079b6a221bd797, type: 3}
+    - {fileID: 21300000, guid: 58ddccd64dff89e49922dd70b2e4759f, type: 3}
+    - {fileID: 21300000, guid: 35505ec7e641eca449255de2cb9b53d5, type: 3}
+    - {fileID: 21300000, guid: 95bcfa8dd5456dc49ac74cc26f555dc8, type: 3}
+    - {fileID: 21300000, guid: be6dbe67fa794aa4e844a3da15f07992, type: 3}
+    - {fileID: 21300000, guid: eb88fd77f5d168a4f889399880ea2587, type: 3}
+    - {fileID: 21300000, guid: 26aeca992c44d8845aa919568601361e, type: 3}
+    - {fileID: 21300000, guid: 728eb875725b5c740be936c926662187, type: 3}
+    - {fileID: 21300000, guid: 1d43ff70d8da73e47b107228db553ea9, type: 3}
   - _name: "\u3086\u3063\u3074\u30FC"
     _faceSprite:
     - {fileID: 0}
@@ -83,17 +95,5 @@ MonoBehaviour:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-  - _name: "\u304B\u306A"
-    _faceSprite:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 21300000, guid: 1d43ff70d8da73e47b107228db553ea9, type: 3}
-    - {fileID: 21300000, guid: 1d43ff70d8da73e47b107228db553ea9, type: 3}
+    - {fileID: 21300000, guid: d75ce09d7d7e6cf4cb675e2f0214dbe4, type: 3}
+    - {fileID: 21300000, guid: d75ce09d7d7e6cf4cb675e2f0214dbe4, type: 3}
