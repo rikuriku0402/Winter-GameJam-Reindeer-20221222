@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class TitleButton : MonoBehaviour
 {
-    const string SCENE_NAME = "FukuwaraiStartScene";
+   [SerializeField] const string SCENE_NAME = "FukuwaraiStartScene";
 
     [SerializeField]
     [Header("タイトル画面ボタン")]
