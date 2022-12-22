@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using UniRx;
 using UniRx.Triggers;
 
-public class TimeManager : MonoBehaviour
+public class TimeManager : SingletonMonoBehaviour<TimeManager>
 {
+    public bool IsTimeOver => _isTimeOver;
+    
     bool _isTimeOver;
 
     [SerializeField]
@@ -20,18 +22,22 @@ public class TimeManager : MonoBehaviour
 
     void CountDown()
     {
-        if (!_isTimeOver)
+        if (UIManager.Instance.TimeText != null)
         {
-            _countDown -= Time.deltaTime;
-
-            UIManager.Instance.TimeText.text = _countDown.ToString("f1") + "•b";
-
-            if (_countDown <= 0)
+            if (!_isTimeOver)
             {
-                _isTimeOver = true;
-                UIManager.Instance.TimeText.text = "0";
-                print("ŽžŠÔ");
+                _countDown -= Time.deltaTime;
+
+                UIManager.Instance.TimeText.text = _countDown.ToString("f1") + "•b";
+
+                if (_countDown <= 0)
+                {
+                    _isTimeOver = true;
+                    UIManager.Instance.TimeText.text = "0";
+                    print("ŽžŠÔ");
+                }
             }
+
         }
     }
 }

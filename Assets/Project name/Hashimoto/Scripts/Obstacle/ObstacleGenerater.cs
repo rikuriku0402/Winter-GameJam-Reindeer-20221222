@@ -41,18 +41,21 @@ public class ObstacleGenerater : MonoBehaviour
     /// </summary>
     private void ObstacleGeneration()
     {
-        ++_frame;
-
-        if (_frame > _generateFrame)
+        if (GameManager.Instance.IsGame)
         {
-            _frame = 0;
+            ++_frame;
 
-            // ランダムで種類と位置を決める
-            int index = Random.Range(0, _obstacles.Length);
-            float posX = Random.Range(_minX, _maxX);
-            float posY = Random.Range(_minY, _maxY);
+            if (_frame > _generateFrame)
+            {
+                _frame = 0;
 
-            GameObject obj = Instantiate(_obstacles[index], new Vector3(posX, posY, 0f), Quaternion.identity);
+                // ランダムで種類と位置を決める
+                int index = Random.Range(0, _obstacles.Length);
+                float posX = Random.Range(_minX, _maxX);
+                float posY = Random.Range(_minY, _maxY);
+
+                GameObject obj = Instantiate(_obstacles[index], new Vector3(posX, posY, 0f), Quaternion.identity);
+            }
         }
     }
 }
