@@ -16,6 +16,11 @@ public class MoneyMeter : SingletonMonoBehaviour<MoneyMeter>
     [SerializeField]
     Text _moneyGageText;
 
+    [SerializeField]
+    [Header("終わりテキスト")]
+    Text _endText;
+
+
     void Start()
     {
         //お金ゲージ
@@ -27,7 +32,23 @@ public class MoneyMeter : SingletonMonoBehaviour<MoneyMeter>
 
     void Update()
     {
-        
+        if (TimeManager.Instance.IsTimeOver)
+        {
+            _endText.gameObject.SetActive(true);
+            if (_moneySlider.value <= 500)
+            {
+                _endText.text = "全然だめじゃない！今年は500円よ！";
+            }
+            else if (_moneySlider.value <= 5000)
+            {
+                _endText.text = "まぁまぁね！今年は100円よ！";
+            }
+            else if (_moneySlider.value == 10000)
+            {
+                _endText.text = "すごい！！！10000円あげるわ！！！";
+            }
+            GameManager.Instance.GameEnd();
+        }
     }
 
     public void PlusMoney(int score)
@@ -35,6 +56,5 @@ public class MoneyMeter : SingletonMonoBehaviour<MoneyMeter>
         ScoreManager.Instance.AddScore(score);
         _currentMoney += score;
         _moneySlider.value = _currentMoney;
-
     }
 }
