@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class MoneyMeter : SingletonMonoBehaviour<MoneyMeter>
 {
     [SerializeField]
-    float _maxMoney = 100;
+    float _maxMoney ;
 
     float _currentMoney; 
 
