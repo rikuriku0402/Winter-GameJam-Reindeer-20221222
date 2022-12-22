@@ -7,6 +7,8 @@ using UniRx.Triggers;
 
 public class TimeManager : MonoBehaviour
 {
+    public bool IsTimeOver => _isTimeOver;
+    
     bool _isTimeOver;
 
     [SerializeField]
