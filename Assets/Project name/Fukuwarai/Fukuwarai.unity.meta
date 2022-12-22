@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Project name/Fukuwarai/Fukuwarai.unity.meta
 guid: 7cdaa328647e1df40ad061174c53e417
+========
+guid: c0fba671f46b4e44f9876f492996aef3
+>>>>>>>> 80058d1a9804262a8e04e0a600bdbd6b4b52360a:Assets/ClafoMio/TestBackGround.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
