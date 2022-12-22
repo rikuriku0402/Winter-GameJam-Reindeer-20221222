@@ -87,13 +87,13 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1d43ff70d8da73e47b107228db553ea9, type: 3}
   - _name: "\u3086\u3063\u3074\u30FC"
     _faceSprite:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: a3b893c7584476a4fa59c6893947f527, type: 3}
+    - {fileID: 21300000, guid: fcee3983f449f7448a18d3725a5625a9, type: 3}
+    - {fileID: 21300000, guid: e7733520a36aed74bb855c5ee2c0f937, type: 3}
+    - {fileID: 21300000, guid: a1022a87c365d124092b121f1b04756a, type: 3}
+    - {fileID: 21300000, guid: fa593d6400e6f3544a58bc7afb5e0206, type: 3}
+    - {fileID: 21300000, guid: 947780ab2e347b74fab323e819d19077, type: 3}
+    - {fileID: 21300000, guid: 0dc6e0308f0b90c4286b91058324a4f6, type: 3}
+    - {fileID: 21300000, guid: 70ac36818fdff3b429954bee2f596020, type: 3}
     - {fileID: 21300000, guid: d75ce09d7d7e6cf4cb675e2f0214dbe4, type: 3}
     - {fileID: 21300000, guid: d75ce09d7d7e6cf4cb675e2f0214dbe4, type: 3}

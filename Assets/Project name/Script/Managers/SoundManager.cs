@@ -19,7 +19,7 @@ public class SoundManager : SingletonMonoBehaviour<SoundManager>
     {
         base.Awake();
         _audioSource = GetComponent<AudioSource>();
-        PlayBGM(BGMType.None);
+        PlayBGM(BGMType.FukuWaraiBGM);
     }
 
     /// <summary>BGM‚ğ•Ï‚¦‚éŠÖ”</summary>

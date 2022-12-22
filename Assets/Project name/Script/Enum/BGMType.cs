@@ -6,4 +6,7 @@ public enum BGMType
 {
     None,
     FukuWaraiBGM,
+    Title,
+    Rule,
+    Game,
 }
