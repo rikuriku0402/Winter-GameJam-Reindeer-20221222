@@ -25,6 +25,10 @@ public class DOFadeImage : MonoBehaviour
         _openCurtain.rectTransform.DOAnchorPosY(900, _openCurtainSpeed)
                                   .SetLink(gameObject)
                                   .SetEase(Ease.Linear);
+
+        SoundManager.Instance.StopBGM();
+        SoundManager.Instance.PlaySFX(SFXType.Clear);
+
     }
     public void CloseCurtain()
     {
