@@ -4,5 +4,6 @@ using UnityEngine;
 
 public enum BGMType
 {
-    None
+    None,
+    FukuWaraiBGM,
 }
