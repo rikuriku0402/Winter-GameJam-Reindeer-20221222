@@ -14,6 +14,7 @@ public class FacePartsImage : ScriptableObject
     [Header("パーツデータ")]
     List<FaceData> _faceDatas = new List<FaceData>();
 }
+
 [System.Serializable]
 public class FaceData
 {
