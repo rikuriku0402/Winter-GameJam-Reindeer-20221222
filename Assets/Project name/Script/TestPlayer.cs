@@ -11,7 +11,7 @@ public class TestPlayer : MonoBehaviour
             if (GameManager.Instance.IsGame)
             {
                 ScoreManager.Instance.DecreaseScore(10);
-                GameManager.Instance.GameClear();
+                GameManager.Instance.GameEnd();
             }
         }
         //SceneLoader.Instance.FadeIn("SampleScene");

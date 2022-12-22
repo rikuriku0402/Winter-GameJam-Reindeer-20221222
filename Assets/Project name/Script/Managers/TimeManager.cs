@@ -22,18 +22,22 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager>
 
     void CountDown()
     {
-        if (!_isTimeOver)
+        if (UIManager.Instance.TimeText != null)
         {
-            _countDown -= Time.deltaTime;
-
-            UIManager.Instance.TimeText.text = _countDown.ToString("f1") + "•b";
-
-            if (_countDown <= 0)
+            if (!_isTimeOver)
             {
-                _isTimeOver = true;
-                UIManager.Instance.TimeText.text = "0";
-                print("ŽžŠÔ");
+                _countDown -= Time.deltaTime;
+
+                UIManager.Instance.TimeText.text = _countDown.ToString("f1") + "•b";
+
+                if (_countDown <= 0)
+                {
+                    _isTimeOver = true;
+                    UIManager.Instance.TimeText.text = "0";
+                    print("ŽžŠÔ");
+                }
             }
+
         }
     }
 }

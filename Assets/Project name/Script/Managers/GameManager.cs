@@ -10,12 +10,16 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     bool _isGame;
 
     [SerializeField]
-    [Header("ゲームクリアキャンバス")]
-    GameObject _gameClearCanvas;
+    [Header("リトライするシーン名")]
+    string _retrySceneName;
 
     [SerializeField]
-    [Header("ゲームオーバーキャンバス")]
-    GameObject _gameOverCanvas;
+    [Header("タイトルのシーン名")]
+    string _titleSceneName;
+
+    [SerializeField]
+    [Header("ゲームクリアキャンバス")]
+    GameObject _gameEndCanvas;
 
     [SerializeField]
     [Header("リトライボタン")]
@@ -28,23 +32,14 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private void Start()
     {
         _isGame = true;
-        _gameClearCanvas.gameObject.SetActive(false);
-        _gameOverCanvas.gameObject.SetActive(false);
-        _retryButton.onClick.AddListener(() => SceneLoader.Instance.FadeIn("シーン名"));
-        _titleButton.onClick.AddListener(() => SceneLoader.Instance.FadeIn("シーン名"));
+        _gameEndCanvas.gameObject.SetActive(false);
+        _retryButton.onClick.AddListener(() => SceneLoader.Instance.FadeIn(_retrySceneName));
+        _titleButton.onClick.AddListener(() => SceneLoader.Instance.FadeIn(_titleSceneName));
     }
 
-    public void GameClear()
+    public void GameEnd()
     {
-        _gameClearCanvas.gameObject.SetActive(true);
-        _retryButton.gameObject.SetActive(true);
-        _titleButton.gameObject.SetActive(true);
-        _isGame = false;
-    }
-
-    public void GameOver()
-    {
-        _gameOverCanvas.gameObject.SetActive(true);
+        _gameEndCanvas.gameObject.SetActive(true);
         _retryButton.gameObject.SetActive(true);
         _titleButton.gameObject.SetActive(true);
         _isGame = false;

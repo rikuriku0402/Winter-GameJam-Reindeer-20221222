@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx;
+using UniRx.Triggers;
 
 public class KaitCon : MonoBehaviour
 {
@@ -15,11 +17,18 @@ public class KaitCon : MonoBehaviour
     /*左の最大　画面外行かないように 原点(プレイヤーの初期位置)が0の時
      _maxLeft　は[-N]にする */
 
-    private float Xpos;
-    private void Update()
+    private void Start()
     {
-        KaiteController();
-        
+        this.UpdateAsObservable().Subscribe(x => KaiteController());
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IHitable hit))
+        {
+            hit.Hit();
+        }
     }
 
     void KaiteController()
