@@ -5,8 +5,10 @@ using UnityEngine.UI;
 using UniRx;
 using UniRx.Triggers;
 
-public class TimeManager : MonoBehaviour
+public class TimeManager : SingletonMonoBehaviour<TimeManager>
 {
+    public bool IsTimeOver => _isTimeOver;
+    
     bool _isTimeOver;
 
     [SerializeField]
