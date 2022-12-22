@@ -4,5 +4,9 @@ using UnityEngine;
 
 public enum BGMType
 {
-    None
+    None,
+    FukuWaraiBGM,
+    Title,
+    Rule,
+    Game,
 }

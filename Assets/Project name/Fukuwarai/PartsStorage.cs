@@ -9,7 +9,6 @@ public class PartsStorage : MonoBehaviour
     [Header("各パーツ")]
     List<Image> _parts = new();
 
-    [SerializeField]
     int _num;
 
     [SerializeField]
@@ -22,7 +21,7 @@ public class PartsStorage : MonoBehaviour
 
     void Awake()
     {
-        //_num = Random.Range(0,_maxNum);
+        _num = Random.Range(0,_maxNum);
         SetFaceImage(_num);
     }
 
