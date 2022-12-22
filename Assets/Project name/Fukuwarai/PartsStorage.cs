@@ -25,6 +25,7 @@ public class PartsStorage : MonoBehaviour
         SetFaceImage(_num);
     }
 
+    /// <summary>Šç‚ð‘I‘ð</summary>
     public void SetFaceImage(int num)
     {
         Debug.Log(_facePartsImage.FaceDatas[num].Name);

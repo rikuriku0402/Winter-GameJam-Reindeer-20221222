@@ -7,12 +7,12 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 {
     [SerializeField]
     [Header("親のオブジェクト")]
-    Transform parentTransform;
+    Transform _parentTransform;
 
     public void OnBeginDrag(PointerEventData data)
     {
         GetComponent<CanvasGroup>().blocksRaycasts = false;
-        parentTransform = transform.parent;
+        _parentTransform = transform.parent;
         transform.SetParent(transform.parent.parent);
 
     }
@@ -24,7 +24,7 @@ public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragH
 
     public void OnEndDrag(PointerEventData data)
     {
-        transform.SetParent(parentTransform);
+        transform.SetParent(_parentTransform);
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 }
