@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PartsPlacement : MonoBehaviour,IDragHandler,IBeginDragHandler,IEndDragHandler
+public class DragObj : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
     [SerializeField]
     [Header("親のオブジェクト")]
@@ -11,12 +11,12 @@ public class PartsPlacement : MonoBehaviour,IDragHandler,IBeginDragHandler,IEndD
 
     public void OnBeginDrag(PointerEventData data)
     {
-        Debug.Log("OnBeginDrag");
         GetComponent<CanvasGroup>().blocksRaycasts = false;
         parentTransform = transform.parent;
         transform.SetParent(transform.parent.parent);
 
     }
+
     public void OnDrag(PointerEventData data)
     {
         transform.position = data.position;
@@ -24,7 +24,6 @@ public class PartsPlacement : MonoBehaviour,IDragHandler,IBeginDragHandler,IEndD
 
     public void OnEndDrag(PointerEventData data)
     {
-        Debug.Log("OnEndDrag");
         transform.SetParent(parentTransform);
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
