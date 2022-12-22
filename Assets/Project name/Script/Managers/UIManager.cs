@@ -17,9 +17,4 @@ public class UIManager : SingletonMonoBehaviour<UIManager>
     [Header("タイムテキスト")]
     Text _timeText;
 
-    void Start()
-    {
-        _scoreText.text = 0.ToString("d2");
-        _timeText.text = 0.ToString("f2");
-    }
 }

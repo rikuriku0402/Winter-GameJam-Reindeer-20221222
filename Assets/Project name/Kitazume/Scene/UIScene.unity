@@ -414,6 +414,7 @@ MonoBehaviour:
   _openCurtain: {fileID: 1188408768}
   _timeManager: {fileID: 250260251}
   _openCurtainSpeed: 1
+  _closeCurtainSpeed: 0.1
 --- !u!1 &577277081
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,7 +615,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 130}
+  m_AnchoredPosition: {x: 0, y: 900}
   m_SizeDelta: {x: 920, y: 780}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1188408768
