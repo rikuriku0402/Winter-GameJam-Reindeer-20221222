@@ -39,6 +39,7 @@ public class DOFadeImage : MonoBehaviour
         if (TimeManager.Instance.IsTimeOver)
         {
             OpenCurtain();
+            GameManager.Instance.GameEnd();
         }
     }
 }
